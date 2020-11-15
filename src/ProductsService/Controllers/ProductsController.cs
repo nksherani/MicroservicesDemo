@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -19,9 +20,9 @@ namespace ProductsService.Controllers
             "Cream", "Shampoo", "Cooking Oil", "Ice Cream"
         };
 
-        private readonly ILogger<ProductsController> _logger;
+        private readonly IAppLogger _logger;
 
-        public ProductsController(ILogger<ProductsController> logger)
+        public ProductsController(IAppLogger logger)
         {
             _logger = logger;
         }
@@ -29,6 +30,8 @@ namespace ProductsService.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            var methodName = "ProductsController.Get";
+            _logger.Debug(methodName + " invoked");
             return Summaries;
         }
     }

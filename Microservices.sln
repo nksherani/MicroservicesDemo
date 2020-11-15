@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.36
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{FD71CED4-3342-4BC2-A686-D62601042B82}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FD71CED4-3342-4BC2-A686-D62601042B82}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsersService", "src\UsersService\UsersService.csproj", "{F2ABF614-773D-4645-B4AB-6EAA2C6BB700}"
 EndProject
@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthServer", "AuthServer\AuthServer.csproj", "{CB2D92AC-F151-457E-A6AF-A6D738E9EEF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{207E2A65-554B-41B1-A2E5-F277F43AED45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{207E2A65-554B-41B1-A2E5-F277F43AED45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingService", "LoggingService\LoggingService.csproj", "{18EC02EE-DB67-4010-A4D7-6E742357EB5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingService", "LoggingService\LoggingService.csproj", "{18EC02EE-DB67-4010-A4D7-6E742357EB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{5CA1371B-0037-459B-8D6B-D68D48449653}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{18EC02EE-DB67-4010-A4D7-6E742357EB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18EC02EE-DB67-4010-A4D7-6E742357EB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18EC02EE-DB67-4010-A4D7-6E742357EB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA1371B-0037-459B-8D6B-D68D48449653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA1371B-0037-459B-8D6B-D68D48449653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA1371B-0037-459B-8D6B-D68D48449653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA1371B-0037-459B-8D6B-D68D48449653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

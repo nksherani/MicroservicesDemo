@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,6 +39,7 @@ namespace ProductsService
             //Configuration.GetSection
 
             services.Configure<CustomConfiguration>(Configuration);
+            services.AddSingleton< Common.IAppLogger,AppLogger>();
 
             //services.AddDbContextPool<ConfigurationStoreContext>(o => o.UseSqlServer(connectionString));
 
